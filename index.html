@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sp19-BCS-092</title>
+    <title>Hamza</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
@@ -33,7 +33,7 @@
             <input type="button" class="entry" value="C" onclick="clr()" />
           </div>
           <div class="col">
-            <input type="button" class="entry" value="x" onclick="dis('x')" />
+            <input type="button" class="entry" value="x" onclick="dis('*')" />
             <input type="button" class="entry" value="-" onclick="dis('-')" />
             <input type="button" class="entry" value="+" onclick="dis('+')" />
             <input type="button" class="entry" value="=" onclick="solve()" />
@@ -48,6 +48,7 @@
 
       function solve() {
         let x = document.getElementById("ans").value;
+
         let y = eval(x);
 
         document.getElementById("ans").value = y;
